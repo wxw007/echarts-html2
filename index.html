@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驾驶舱页面</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="./css/common_utils.css">
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 头部 start -->
+        <div class="page-title">
+            <div class="project-name">杭州大江东</div>
+            <div class="date-picker ys-datepicker ys-datetimepicker">
+                <input type="text" name="certDate" value="2020-10-10" class="form-control">
+            </div>
+        </div>
+        <!-- 头部 end -->
+
+        <!-- 经营分析 start -->
+        <div class="left-box">
+            <!-- 经营分析 -->
+            <div class="area-title">经营分析</div>
+            <div class="common-box left-box-1">
+                <div class="box-top">
+                    <div class="box-title">
+                        <span class="font-1">开业率/签约率</span>
+                        <span class="font-2">值: 80% | 90%</span>
+                    </div>
+                    <div class="legend">
+                        <span><i class="ring bg-color-1"></i> <span class="font-2">开业率</span></span>
+                        <span><i class="ring bg-color-2"></i> <span class="font-2">开业指标</span></span>
+                        <span><i class="ring bg-color-3"></i> <span class="font-2">签约率</span></span>
+                    </div>
+                </div>
+                <div class="chart-1" id="chart1"></div>
+            </div>
+
+            <div class="left-box-2">
+                <div class="common-box left-box-2-1"></div>
+                <div class="common-box left-box-2-2"></div>
+                <div class="common-box left-box-2-3"></div>
+            </div>
+            <div class="common-box left-box-3">
+
+            </div>
+        </div>
+        <!-- 经营分析 end -->
+
+
+           <!-- 经营分析 start -->
+           <div class="right-box">
+            <!-- 经营分析 -->
+            <div class="area-title">风险管理</div>
+            <div class="common-box right-box-1">
+                <div class="box-top">
+                    <div class="box-title">
+                        <span class="font-1">开业率/签约率</span>
+                        <span class="font-2">值: 80% | 90%</span>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="right-box-2">
+                <div class="common-box right-box-2-1"></div>
+                <div class="common-box right-box-2-2"></div>
+            </div>
+            <div class="common-box right-box-3">
+
+            </div>
+        </div>
+        <!-- 经营分析 end -->
+    </div>
+
+    <script src="./js/jquery1.10.2.js"></script>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/bootstrap-datetimepicker.js"></script>
+    <script src="./js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="./js/jq_plugin_datepicker.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

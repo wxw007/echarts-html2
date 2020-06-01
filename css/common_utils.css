@@ -1,0 +1,1484 @@
+/*ys-page*/
+.ys-page .form-horizontal .control-label{
+    padding-right:15px;
+    font-weight:normal;
+    color:#757575;
+}
+/*patch 统一字符大小*/
+.input-sm{
+    font-size:14px;
+}
+/*==========ys-dropdown==========*/
+.ys-dropdown{
+
+}
+.ys-dropdown .ys-dropdown-btn{
+    position: relative;
+    display: block;
+    min-width:88px;
+    height: 32px;
+    line-height: 30px;
+    border:  solid 1px #d8e0e7;
+    padding: 0 15px;
+    color: #333;
+    text-decoration: none;
+    outline-style: none;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ys-dropdown .ys-dropdown-btn:hover,
+.ys-dropdown.ys-open .ys-dropdown-btn {
+    /*background-color: #e64e4d;*/
+    /*border-color: #e64e4d;*/
+    background-color: #32aaff;
+    border-color: #32aaff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ys-dropdown .ys-dropdown-btn:after {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    content: "";
+}
+
+.ys-dropdown .ys-dropdown-btn:hover:after,
+.ys-dropdown.ys-open .ys-dropdown-btn:after {
+    border-color: #fff;
+}
+.ys-dropdown ul.dropdown-menu{
+    max-height:220px;
+    overflow-y: auto;
+}
+.ys-dropdown ul.ys-dropdown-menu{
+
+}
+.ys-dropdown .dropdown-menu>li>a {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*input－group下 ys-dropdown btn 100%*/
+.input-group.ys-dropdown >.btn{position:relative;padding-right:20px;width:100%;text-align: left;}
+.input-group.ys-dropdown >.btn>span{position: absolute;top:50%;right:10px;margin-top:-2px;}
+
+/*ys-dropdown-group*/
+.ys-dropdown-group{
+
+}
+.ys-dropdown-group .ys-dropdown{
+    float:left;
+    margin-right:-1px;
+}
+
+/*==========================*/
+/*==========ys-dropdown-inline==========*/
+.ys-dropdown-inline{
+    width:100%;
+}
+.ys-dropdown-inline .ys-dropdown-btn{
+    position: relative;
+    display: block;
+    min-width:88px;
+    width:100%;
+    height: 32px;
+    line-height: 30px;
+    border: solid 1px #d8e0e7;
+    padding: 0 20px;
+    padding-left:10px;
+    padding-right:33px;
+    border-radius:0;
+    text-decoration: none;
+    text-align: left;
+    outline-style: none;
+    box-shadow: none;
+    cursor: pointer;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ys-dropdown-inline .open .ys-dropdown-btn{
+    color: #333;
+    background-color: #f3f4f8;
+}
+.ys-dropdown-inline .ys-dropdown-btn:hover,
+.ys-dropdown-inline.ys-open .ys-dropdown-btn {
+    /* background-color: #e64e4d;
+     color: #fff;
+     border-color: #e64e4d;*/
+
+}
+.ys-dropdown-inline .ys-dropdown-btn:focus{
+    outline:solid 1px #3aabf3;
+
+    border-color: transparent!important;
+    box-shadow: none;
+}
+
+.ys-dropdown-inline .ys-dropdown-btn:after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin: 0;
+    margin-top:-5px;
+    width: 15px;
+    height: 10px;
+   /* background: url(../../images/component/select-black-down-icon.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    */
+    background: url(../../images/common/icons.png) no-repeat -75px -54px;
+
+    content: "";
+}
+
+.ys-dropdown-inline .ys-dropdown-btn:hover:after,
+.ys-dropdown-inline.ys-open .ys-dropdown-btn:after {
+    border-color: #fff;
+}
+
+.ys-dropdown-inline ul.ys-dropdown-menu{
+
+}
+
+/*reset*/
+.ys-dropdown-inline .dropdown-menu{
+    min-width: inherit;
+    max-height: 220px;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    background-color: #f6f6f6;
+    border: 1px solid #c8cbca;
+    box-shadow: none;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.ys-dropdown-inline .dropdown-menu>li{
+    padding:0;
+}
+.ys-dropdown-inline .dropdown-menu>li.dropdown-header{
+    padding:3px 10px;
+}
+.ys-dropdown-inline .dropdown-menu>li>a {
+    display:block;
+    width:100%;
+    height: 32px;
+    line-height: 32px;
+    padding:0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ys-dropdown-inline .dropdown-menu>.active>a,
+.ys-dropdown-inline .dropdown-menu>.active>a:focus,
+.ys-dropdown-inline .dropdown-menu>.active>a:hover {
+    /* color: #fff;*/
+    color:inherit;
+    text-decoration: none;
+    background-color: #d8e0e7;
+    outline: 0;
+}
+.ys-dropdown-inline .dropdown-menu>li>a:focus{
+
+}
+
+
+/*==========ys-search-wrapper==========*/
+.ys-search-wrapper{}
+.ys-search-wrapper:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.ys-search-wrapper .ys-search{
+    width:180px;
+    float:left;
+}
+.ys-search-wrapper .ys-search>input.form-control{
+    display:block;
+    width:100%;
+    background:url(../../images/common/search-icon.png) no-repeat 6px center;
+    background-size:17px 16px;
+    padding-left:30px;
+}
+
+.ys-search-wrapper .ys-search.ys-search-reverse>input.form-control{
+    padding-left:12px;
+    padding-right:30px;
+    background-position: right 6px center;
+}
+
+
+
+/*==========ys-datetimepicker ys-datepicker==========*/
+/*ys-datetimepicker表现为后面带日历图标的
+    ys-datepicker一般表现为带左右操作箭头，或者选择日期范围的表现*/
+/*ys-datetimepicker*/
+.ys-datetimepicker {
+    position: relative;
+    height:32px;
+   /* border: solid 1px #d8e0e7;*/
+    border:0;
+    /*width: 280px;*/
+    cursor: pointer;
+}
+.ys-datetimepicker>input.form-control {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    border: solid 1px #d8e0e7;
+    padding-left: 15px;
+    font-size:14px;
+}
+.ys-datetimepicker:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    display: block;
+    width: 32px;
+    background: url(../images/ys-datetime-icon.png) no-repeat center center;
+    background-size: 20px 20px;
+    border-left: 1px solid #d8e0e7;
+}
+
+.ys-datetimepicker>input.form-control:focus{
+    border: solid 1px transparent;
+    outline:solid 1px #1faeff;
+}
+
+/*ys-datepicker*/
+.ys-datepicker{
+    /*width:200px;*/
+}
+.ys-datepicker .form-control{
+    height:32px;
+    padding:5px 12px;
+    border:solid 1px #d8e0e7;
+    font-size:14px;
+}
+
+.ys-datepicker .ys-btn{
+    border:solid 1px #d8e0e7;
+}
+.ys-datepicker .input-group-addon{
+    padding:3px 7px;
+    padding-top:5px;
+    background: none;
+    border: solid 1px #d8e0e7;
+}
+
+.ys-datetime-range .input-group-addon,
+.ys-select-range .input-group-addon{
+
+    position:relative;
+    padding:4px 7px;
+    width:1%;
+    background: none;
+    border: solid 1px #d8e0e7;
+    border-left: 0;
+    border-right: 0;
+    width:1%;
+}
+
+.ys-datepicker.ys-datetime-range{}
+.ys-datepicker.ys-datetime-range input{
+    background-color:transparent;
+}
+.ys-datepicker.ys-datetime-range:after,
+.ys-datepicker.ys-datetime-range .input-group-addon:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+
+    bottom: 0;
+    display: block;
+    width: 32px;
+    background: url(../images/ys-datetime-icon.png) no-repeat center center;
+    background-size: 20px 20px;
+    z-index:0;
+}
+.ys-datepicker.ys-datetime-range:after{
+    right:0;
+}
+.ys-datepicker.ys-datetime-range .input-group-addon:after{
+    left:-32px;
+}
+
+
+.ys-edit .ys-datepicker.ys-datetime-range{
+
+}
+.ys-edit .ys-datepicker.ys-datetime-range input{
+    border:0;
+}
+.ys-edit .ys-datepicker.ys-datetime-range .input-group-addon{
+    border:0;
+    border-left:solid 1px #d8e0e7;
+    border-right:solid 1px #d8e0e7;
+}
+/*==========ys-pagination==========*/
+.ys-pagination-wrapper{
+
+}
+.ys-pagination{
+
+}
+.ys-pagination>span{float:left;padding-right:10px;padding-left:10px;}
+.ys-pagination .ys-page-limit,
+.ys-pagination .ys-page-index{
+    display: inline-block;
+    line-height: 32px;
+    color:#999;
+}
+
+.ys-pagination .ys-page-opt{float:left;margin-right:10px;}
+.ys-pagination .ys-page-opt .btn{
+    /*min-width: 50px;*/
+    min-width:inherit;
+    width:38px;
+    padding:0;
+    color:#999;
+}
+.ys-pagination .ys-page-opt .btn#btn-next-bottom{
+    float:right;
+}
+.ys-pagination .ys-page-opt .btn:nth-child(2){
+    float:right;
+}
+
+.ys-page-num-input{
+    width: 50px;
+    height: 32px;
+    line-height: 30px;
+    border: solid 1px #d8e0e7;
+    text-align: center;
+    /*margin-left: -4px;
+    margin-right: 10px;*/
+    float:left;
+    margin-left:6px;
+    margin-right:6px;
+
+}
+
+.ys-pagination .ys-dropdown>button{
+    min-width: inherit;
+    width: 60px;
+}
+
+/*==========ys-collapse-wrapper========*/
+/*用于高级搜索,新增项目等页面级的操作*/
+.ys-collapse-wrapper{
+    position: relative;
+    padding:0;
+    border: 4px solid #808C92;
+}
+.ys-collapse-wrapper .ys-collapse-header{
+    padding:15px;
+    border-bottom: solid 1px #ddd;
+}
+.ys-collapse-wrapper .ys-collapse-header h3{font-size:18px;line-height: 32px;}
+.ys-collapse-wrapper .ys-collapse-content{
+    padding:15px;
+}
+
+
+/*.ys-collapse-wrapper .input-group{
+    table-layout:fixed;
+}*/
+/*ys-table-collapse*/
+/*由div ul仿表格构造*/
+.ys-table-collapse{
+
+}
+.ys-table-collapse-thead{
+    background-color:#f3f3f3;
+}
+.ys-table-collapse-tbody{
+
+}
+.ys-table-collapse-row{
+
+}
+
+.ys-table-row{
+    display: table;
+    width:100%;
+    table-layout: fixed;
+    -webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    -ms-transition: background-color .25s;
+    -o-transition: background-color .25s;
+    transition: background-color .25s;
+}
+.ys-table-row.ys-table-row-selected,
+[aria-expanded='true'] .ys-table-row{
+    background-color:#808C92;
+    color:#fff;
+
+}
+.ys-table-row+.ys-row-collapse{
+    /*display: none;*/
+    height:0;
+    opacity:1;
+    visibility:hidden;
+    overflow: hidden;
+    -webkit-transition: opacity 0s,height .3s;
+    -moz-transition: opacity 0s,height .3s;
+    -ms-transition: opacity 0s,height .3s;
+    -o-transition: opacity 0s,height .3s;
+    transition: opacity 0s,height .3s;
+}
+.ys-table-row.ys-table-row-selected+.ys-row-collapse{
+    height:auto;
+    opacity:1;
+    visibility: visible;
+}
+
+.ys-table-row .ys-table-cell,
+ul.ys-table-row  li{
+    display: table-cell;
+    position: relative;
+    padding:8px;
+    line-height: 20px;
+}
+
+.ys-table-row .ys-table-cell>span,
+ul.ys-table-row  li>span{
+    display: block;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*==========ys-panel==========*/
+.ys-panel{
+
+}
+.ys-panel-group-table .panel+.panel{margin-top:0;}
+.ys-panel-group-table .panel{border:0;border-radius:0;box-shadow: none;}
+
+.ys-panel-group-table .panel-heading{background-color:#fff;}
+.ys-panel-group-table .ys-panel-thead {}
+.ys-panel-group-table .panel>.panel-heading{padding:0;border:0;border-radius:0;background-color:#fff;}
+
+.ys-panel-group-table .panel>.panel-heading li{}
+.ys-panel-group-table .ys-panel-thead>.panel-heading{background-color:#f3f6f9;color:#7e8c9e;}
+
+.ys-panel-group-table .panel>.panel-heading:hover{
+    cursor:pointer;
+    background-color:#f5f5f5;
+}
+.ys-panel-group-table .ys-panel-thead>.panel-heading:hover{
+    cursor:inherit;
+    background-color:inherit;
+}
+/*==========ys-chart-legend==========*/
+.ys-chart-legend{
+
+}
+
+/*==========ys-modal==========*/
+.ys-modal{
+
+}
+
+/*==========.ys-attachment-list==========*/
+.ys-attach-upload{text-align: center;}
+.ys-attach-upload a.ys-file {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    width:145px;
+    height:50px;
+    overflow: hidden;
+    background-color: #18b0e2;
+    border:0;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 22px;
+    vertical-align: top;
+}
+
+.ys-attach-upload .fileinput-button{width:160px;height:44px;}
+.ys-attach-upload a.ys-file>em{display: inline-block;color:#fff;font-size: 22px;font-weight: bold;}
+.ys-attach-upload a.ys-file input {
+    position: absolute;
+    font-size: 50px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.ys-attach-upload a.ys-file:hover,.ys-attach-upload a.ys-file:active:hover {
+    background-color: #19a0d2;
+    color:#fff;
+}
+
+.ys-attachment-list ul{list-style: none;padding-left:12px;padding-right:12px;border:solid 1px #ddd;}
+.ys-attachment-list ul>li{height:40px;line-height: 40px;color:#757575;}
+.ys-attachment-list ul>li>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.ys-attachment-list ul a.ys-attach-file-link{color:#222;text-decoration: underline;}
+.ys-attachment-list ul a.ys-attach-file-link:hover{color:#19a0d2;}
+.ys-attachment-list ul a.ys-attach-del{color:#E64E4D;text-decoration: none;}
+.ys-attachment-list ul a.ys-attach-del:hover{color: #c44342;}
+.ys-attachment-list h5{color:#757575;}
+
+/**/
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px !important;
+    direction: ltr;
+    cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+    .fileinput-button input {
+        filter: alpha(opacity=0);
+        font-size: 100%;
+        height: 100%;
+    }
+}
+
+/* ======================================== ys-checkbox */
+.ys-checkbox {
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../images/common/checkbox_blue.png) no-repeat -202px -1px;
+}
+
+.ys-checkbox:hover{
+    cursor:pointer;
+    background-position: -262px -1px;
+}
+
+.ys-checkbox.checked{
+    background-position: -242px -1px!important;
+}
+
+/* ys-checkbox ======================================== */
+
+/* ======================================== 审批状态进度 */
+.ys-network-process-bar-item-list{background-color:inherit;border-radius: 0;padding-left:0;padding-right:0;}
+.ys-network-process-bar-item-list li{display:inline-block;}
+.ys-network-process-bar-item-list li>span{display:inline-block;padding:6px 8px;border:solid 1px #ddd;border-radius: 4px;}
+.ys-network-process-bar-item-list li.ys-network-process-done>span{background-color: #eaeaea;}
+.ys-network-process-bar-item-list li.ys-network-process-start>span{background-color:#18b0e2;color:#fff;border:solid 1px #18b0e2; }
+.ys-network-process-bar-item-list li.ys-network-process-next>span{}
+.ys-network-process-bar-item-list > li + li:before{content: ">";padding: 0 5px;color: #ccc;}
+/* 审批状态进度 ======================================== */
+
+/* ======================================== 审批审批记录 */
+.ys-network-approval-message-container ul{list-style: none;padding-left:0;}
+.ys-network-approval-message-container ul li{margin-top:10px;}
+.ys-network-approval-message-container ul li .ys-comment-message-status{padding-left:20px;padding-right:20px;height:38px;line-height: 38px;background-color: #f3f3f3;}
+.ys-network-approval-message-container ul li .ys-status-current{border-left:solid 4px #17b1e3; }
+.ys-network-approval-message-container ul li .ys-comment-message-status>span{display: inline-block;width:30%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ys-network-approval-message-container ul li .ys-comment-message-status>em{display: inline-block;width:3%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ys-network-approval-message-container ul li .ys-comment-message-agreement{padding:15px 65px;color:#757575;}
+.ys-network-approval-message-container ul.ys-comment-message-sub{padding-left:30px;}
+/* 审批审批记录 ======================================== */
+
+/*ys-list-tree*/
+
+.ys-list-tree{list-style: none;padding-left:0;}
+
+.ys-list-tree>li.ys-tree-item{padding-left:20px;position: relative;font-size:14px;line-height: 28px;cursor:pointer;}
+
+.ys-list-tree>li.ys-tree-item.active{/*background-color:#00aaff;*/color:#1faeff;}
+
+/*.ys-list-tree>li.ys-tree-item:before{display: block;content:" ";width:6px;height:6px;border-radius: 6px;
+    background-color:#333;position: absolute;top:11px;left:5px;}*/
+
+.ys-list-tree>li.ys-tree-item.active:before{background-color:#fff;}
+.ys-list-tree>li.ys-tree-item.parent:before{
+    display: block;
+    content:"\002b";
+    /*content:"\e259";*/
+    font-size:12px;
+    color:#333;
+    background-color: transparent;
+    font-family: 'Glyphicons Halflings';
+    position: absolute;width:16px;height:16px;left:0;line-height: 16px;top:6px;text-align: center;
+
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+
+}
+.ys-list-tree>li.ys-tree-item.parent.open:before {
+
+    content:"\2212";
+}
+
+div>.ys-list-tree>li.ys-tree-item.parent:before{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    content:"\e259";
+}
+
+
+
+div>.ys-list-tree>li.ys-tree-item.parent.open:before{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    content:"\e259";
+}
+
+li.ys-tree-item.parent>.ys-list-tree{display: none;}
+li.ys-tree-item.parent.open>.ys-list-tree{display: block;}
+
+.ys-list-tree .parent>.ys-list-tree>li.ys-tree-item:not(.parent):before{
+    display: block;
+    width:5px;
+    height:5px;
+    position: absolute;
+    border-radius: 5px;
+    top:50%;
+    left:7.5px;
+    margin-top:-2.5px;
+    background-color:#ddd;
+    content:" ";
+}
+.ys-list-tree .parent>.ys-list-tree>li.ys-tree-item.active:before{
+    background-color:#1faeff;
+}
+
+
+
+
+/*patch ys-contract-list-tree*/
+
+/*.ys-contract-list-tree{}
+.ys-contract-list-tree .ys-list-tree>li.ys-tree-item.parent:before{
+    left:5px;
+    content:"\002b";
+    color:#797979;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    transform-origin: center center;
+}*/
+
+/*.ys-contract-list-tree>.ys-list-tree>li.ys-tree-item.parent:after{
+    content:" ";
+    position: absolute;
+    z-index:-1;
+    width:100%;
+    height:28px;
+    border-left:solid 4px #1faeff;
+    top:0;
+    left:0;
+}*/
+
+/*
+.ys-contract-list-tree .ys-list-tree>li.ys-tree-item.parent.open:before{
+    content:"\2212";
+
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+}
+.ys-contract-list-tree .parent>.ys-list-tree>li.ys-tree-item:not(.parent):before{
+    display: block;
+    width:5px;
+    height:5px;
+    position: absolute;
+    border-radius: 5px;
+    top:50%;
+    left:7.5px;
+    margin-top:-2.5px;
+    background-color:#ddd;
+    content:" ";
+}
+.ys-contract-list-tree .parent>.ys-list-tree>li.ys-tree-item.active:before{
+    background-color:#1faeff;
+}
+*/
+
+
+
+/* ========================================  合同库，审批表单样式 */
+.ys-separate-block > .ys-section-title{padding:0;}
+.ys-separate-block > .ys-section-title>h3{
+    position:relative;
+    margin: 0;
+    padding-left: 16px;
+    height: 36px;
+    line-height: 34px;
+    border: 1px solid #eff1f4;
+    border-left:2px solid #32aaff;
+    font-size: 15px;
+    background-color: #f8fafa;
+}
+a.ys-section-collapse-btn {
+    position: absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    width: 15px;
+    height: 15px;
+    background:url(../../images/component/select-black-down-icon.png) no-repeat;
+    background-position: center center;
+    transition: transform 0.3s;
+    transform-origin: center center;
+    margin:auto;
+}
+
+a.ys-section-collapse-btn:hover {
+   /* background-position:-151px -54px;*/
+}
+a.ys-section-collapse-btn.collapsed {
+    transform: rotate(180deg);
+}
+
+.ys-separate-block .table tr>th{
+    height:36px;
+    line-height: 35px;
+    background-color: #f8fafa;
+    color: #7e8c9e;
+    padding:0 15px;
+    font-weight: normal;
+}
+.ys-separate-block .table tr>td{
+    height:36px;
+    line-height: 32px;
+    padding:0 15px;
+}
+
+.ys-dropdown-inline .ys-dropdown-btn,
+.ys-separate-block .ys-dropdown-inline .ys-dropdown-btn {
+    padding: 0 28px 0 15px;
+    background-color:transparent;
+}
+
+.ys-dropdown-inline .ys-dropdown-btn{
+    height: 32px;
+}
+.ys-separate-block .ys-dropdown-inline .ys-dropdown-btn {
+    height: 35px;
+}
+
+.ys-edit .ys-dropdown-inline .ys-dropdown-btn{
+    border:0;
+}
+.ys-separate-block  .ys-datetimepicker{
+    border:0;
+}
+.ys-separate-block .ys-datetimepicker{
+    height:100%;
+  /*  border:none;*/
+}
+.ys-separate-block .ys-datetimepicker input.form-control{box-shadow: none; border:0;}
+
+/* 修复表格样式中有重线 */
+.ys-section .ys-section-content table tr:first-child th,
+.ys-section .ys-section-content table tr:first-child td{border-top:none;}
+.ys-section .ys-section-content table{border-top:none;}
+
+.ys-section .ys-section-content+.ys-section-content{
+    margin-top:15px;
+}
+
+.ys-separate-block table.table tr>td.ys-edit>input{padding:0 15px;}
+
+.ys-separate-block table.table tr>td.ys-edit>input:focus{outline:solid 1px #3aabf3;}
+/* 合同库，审批表单样式 ======================================== */
+
+/* ======================================== ys-date-select*/
+.ys-date-select>label{
+    height:32px;
+    line-height: 32px;
+    padding-right:10px;
+    font-weight: normal;
+    margin:0;
+}
+/* ys-date-select ======================================== */
+/*ys-img-wrapper*/
+.ys-img-wrapper>ul{}
+.ys-img-wrapper>ul>li{float:left;}
+.ys-img-wrapper>ul>li+li{margin-left:15px;}
+.ys-icon-btn-del{position:absolute;top:0;right:0;z-index:99; cursor:pointer;}
+
+/*ys-thumbnail*/
+.ys-thumbnail-wrapper{
+    position: relative;
+    padding:10px;
+    border:solid 1px #eff1f4;
+    width: 92px;
+    height:92px;
+    border-radius:6px;
+    background-color:#fff;
+}
+.ys-thumbnail{
+    display: block;
+    height:70px;
+    width:70px;
+    border-radius:3px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-color:#ddd;
+}
+
+/*modal-alert*/
+#modal-confirm-alert{
+
+}
+#modal-confirm-alert .modal-body{
+    padding:20px;
+    padding-top:30px;
+
+}
+
+#modal-confirm-alert .modal-warn-logo{text-align: center;margin-bottom:10px;}
+#modal-confirm-alert .modal-warn-logo img{width:44px;}
+#modal-confirm-alert .modal-body h5{font-size:14px; color:#373c42; line-height: 1.4; text-align: center;}
+#modal-confirm-alert .modal-body p{margin:0; margin-top:10px;margin-bottom:0; font-size:12px; color:#8592a3; line-height: 1.2; text-align: center;}
+
+#modal-confirm-alert .ys-btn-wrapper{
+    text-align:center;
+}
+
+#modal-confirm-alert .ys-btn{float:inherit;min-width: 88px;}
+
+/*.=================col-split-wrapper 弹出框左右分栏样式*/
+.col-split-wrapper{}
+.col-split-wrapper .ys-search-wrapper .ys-search{width:100%;}
+.col-split-wrapper .col-left{float:left;padding-top:15px;border-right:solid 1px #d8e0e7;padding-right:15px;}
+.col-split-wrapper .col-center{float:left;padding-top:15px;border-right:solid 1px #d8e0e7;padding-right:15px;}
+.col-split-wrapper .col-right{float:right;padding-top:15px;}
+
+.col-split-wrapper .col-left,
+.col-split-wrapper .col-center,
+.col-split-wrapper .col-right{max-height:300px;height:300px;overflow:hidden;overflow-y:auto;}
+
+.col-split-wrapper.col-2{
+
+}
+.col-split-wrapper.col-2 .col-left,
+.col-split-wrapper.col-2 .col-right{width:50%;}
+
+.col-split-wrapper.col-3{
+
+}
+.col-split-wrapper.col-3 .col-left,
+.col-split-wrapper.col-3 .col-center,
+.col-split-wrapper.col-3 .col-right{width:33.333333%;}
+
+.col-split-wrapper .col-panel .nav-tabs{border:0;padding:10px 0;}
+.col-split-wrapper .col-panel .nav-tabs>li>a{border:0;padding:0 15px;color:#8b97a7;}
+.col-split-wrapper .col-panel .nav-tabs>li.active>a,
+.col-split-wrapper .col-panel .nav-tabs>li>a:hover{background:none;color:#1faeff;}
+.col-split-wrapper .col-panel .nav-tabs>li+li{border-left:solid 1px #d8e0e7;}
+.col-split-wrapper .col-panel .ys-search-wrapper{padding:0 15px;padding-right:0;}
+.col-split-wrapper .col-panel .ys-search-wrapper .ys-search{width:100%;}
+
+.col-split-wrapper .col-panel .tab-pane{padding:15px;}
+.col-split-wrapper .col-panel .tab-pane ul>li{margin-bottom:8px;}
+
+.col-split-wrapper .col-panel .col-panel-title{font-size:14px;padding-left:10px;border-left:solid 3px #1faeff;}
+
+.col-split-wrapper.col-3 .col-center .col-panel-title,
+.col-split-wrapper.col-3 .col-right .col-panel-title{
+    margin-left:15px;
+}
+
+.col-split-wrapper .ys-dropdown-group,
+.col-split-wrapper .ys-search-wrapper{margin-top:10px;}
+
+.col-split-wrapper .ys-dropdown,
+.col-split-wrapper .ys-dropdown>.btn{width:100%;max-width:100%;}
+
+.col-split-wrapper .ys-dropdown>.btn{
+    padding:0 13px;
+    text-align: left;
+
+}
+
+.col-split-wrapper .ys-select-wrapper{padding:10px 0;}
+.col-split-wrapper .ys-select-wrapper ul{}
+
+
+.col-split-wrapper .ys-select-wrapper ul>li.ys-select-item{
+    position: relative;
+    padding-left:5px;
+    padding-right:26px;
+    line-height: 32px;
+    cursor:pointer;
+}
+.col-split-wrapper .ys-select-wrapper ul>li.ys-select-item:hover{
+   background-color:#f8fafa;
+
+}
+.col-split-wrapper .ys-select-wrapper ul>li.ys-select-item.selected:after{
+    display: block;
+    position: absolute;
+    top:50%;
+    right:5px;
+    cursor:pointer;
+    margin-top:-7px;
+
+
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e084";
+    font-size:14px;
+
+}
+
+.col-split-wrapper .ys-select-wrapper ul>li.ys-select-item.selected:after{
+    color:#51c637;
+}
+
+.col-split-wrapper .ys-select-wrapper.selected ul>li.ys-select-item:after{
+    display: block;
+    position: absolute;
+    top:50%;
+    right:5px;
+    cursor:pointer;
+    margin-top:-7px;
+
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e014";
+    font-size:14px;
+    color: #d8e0e7;
+}
+.col-split-wrapper .ys-select-wrapper.selected ul>li.ys-select-item:hover:after{
+    color:#E64E4D;
+}
+
+/*------------------ys-add-minus-wrapper*/
+.ys-add-minus-wrapper{}
+.ys-add-minus-wrapper>em{cursor:pointer;}
+.ys-add-minus-wrapper>em:nth-last-child(1){margin-left:15px;}
+
+.glyphicon-plus-sign,.glyphicon-minus-sign{cursor:pointer;top:3px;}
+.glyphicon-plus-sign:before,.glyphicon-minus-sign:before{
+    content:""!important;
+    display: block;
+    width:16px;
+    height:16px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center center;
+}
+.glyphicon-plus-sign:before{
+    background-image:url(../../images//icons/add-icon.png);
+}
+.glyphicon-minus-sign:before{
+    background-image:url(../../images//icons/delete-icon.png);
+}
+
+
+/* ======================================== ys-check-btn-group ======================================== */
+.ys-check-btn-group{
+
+}
+
+.ys-check-btn-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.ys-check-btn-group .ys-check-btn{
+    display:block;
+    height:32px;
+    line-height: 30px;
+    color:#757575;
+    text-decoration: none;
+    float:left;
+    padding:0 20px;
+    border:1px solid #d8e0e7;
+    cursor: pointer;
+}
+.ys-check-btn-group .ys-check-btn+.ys-check-btn{
+    margin-left:-1px;
+}
+.ys-check-btn-group .ys-check-btn:hover{
+    background-color:#eaeaea;
+}
+.ys-check-btn-group .ys-check-btn.active{
+    background-color: #808c92;
+    color: #fff;
+    border-color: #808c92;
+}
+
+
+/*tooltip patch==================================*/
+.tooltip{opacity:1;}
+
+.tooltip.right .tooltip-arrow{
+    border-right-color: #E64E4D;
+}
+
+.tooltip.left .tooltip-arrow{
+    border-left-color: #E64E4D;
+}
+.tooltip.top .tooltip-arrow{
+    border-top-color: #E64E4D;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #E64E4D;
+}
+
+.tooltip-inner{
+    min-width:98px;
+    max-width:500px;
+    text-align: left;
+    background-color:#E64E4D;
+    border-radius:2px;
+}
+
+
+.tooltip-warn.left .tooltip-arrow,
+.tooltip-warn.top .tooltip-arrow,
+.tooltip-warn.bottom .tooltip-arrow,
+.tooltip-warn.right .tooltip-arrow{
+    border-right-color: #E64E4D;
+}
+
+.tooltip-warn .tooltip-inner{
+    background-color:#E64E4D;
+}
+
+.tooltip-alert.left .tooltip-arrow,
+.tooltip-alert.top .tooltip-arrow,
+.tooltip-alert.bottom .tooltip-arrow,
+.tooltip-alert.right .tooltip-arrow{
+    border-right-color: #ffbb04;
+}
+
+.tooltip-alert .tooltip-inner{
+    background-color:#ffbb04;
+}
+
+.tooltip-info.left .tooltip-arrow,
+.tooltip-info.top .tooltip-arrow,
+.tooltip-info.bottom .tooltip-arrow,
+.tooltip-info.right .tooltip-arrow{
+    border-right-color: #ffbb04;
+}
+.tooltip-info .tooltip-inner{
+    background-color:#ffbb04;
+}
+
+
+/*ys-badge*/
+.ys-badge{
+    position: relative;
+    display: inline-block;
+    margin-left:3px;
+    padding:0;
+    width:16px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+    font-size:12px;
+    font-weight:normal;
+    color:#fff;
+    background-color:#ffbb04;
+    border-radius:16px;
+}
+.ys-badge{
+    top: -2px;
+    cursor:pointer;
+    transform-origin: center center;
+  /*  -webkit-transform: scale(.88);
+    -moz-transform: scale(.88);
+    -ms-transform: scale(.88);
+    -o-transform: scale(.88);
+    transform: scale(.88);*/
+}
+
+.ys-badge.ys-badge-info{
+    background-color:#ffbb04;
+}
+.ys-badge.ys-badge-alert{
+    background-color:#ffbb04;
+}
+
+.ys-badge.ys-badge-warn{
+    background-color:#E64E4D;
+}
+
+
+/*.alert-success*/
+.ys-alert{
+    position:fixed;
+    z-index:999;
+    display: none;
+    opacity:0;
+    width:180px;
+    text-align: center;
+    left:50%;
+    margin-left:-90px;
+    top:55px;
+
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.ys-alert.active{
+    display: block;
+    opacity: 1;
+}
+.alert-success{
+
+}
+
+
+/*update by cheng for forms 2018-05-07*/
+.input-group .form-control:focus{
+    outline:solid 1px #1faeff;
+    /*border:solid 1px  #1faeff;*/
+    border-color:transparent;
+    outline-offset:-1px;
+}
+
+/*ys-dropdown-project-select*/
+.ys-dropdown-project-select{}
+.ys-dropdown-project-select .dropdown-menu{
+    max-height:460px;
+    padding:0;
+    overflow: hidden;
+}
+.ys-dropdown-project-select .ys-search-wrapper .ys-search{
+    width:100%;
+}
+
+.ys-dropdown-project-select .dropdown-menu .ys-search-wrapper{
+    padding:20px;
+    border-bottom:solid 1px #d8e0e7;
+}
+.ys-dropdown-project-select .dropdown-menu .ys-search-list-wrapper{
+
+}
+.ys-dropdown-project-select .ys-search-list-wrapper>div{
+    padding:0 20px;
+    max-height:385px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper>div:nth-child(1){
+    border-right:solid 1px #d8e0e7;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper>div+div{
+    border-left:solid 1px #d8e0e7;
+    margin-left:-1px;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper ul{
+    padding-bottom:20px;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper ul li.ys-select-item{
+    line-height: 30px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper ul li.ys-select-item.selected{
+    color:#1faeff;
+}
+
+.ys-dropdown-project-select .ys-search-list-wrapper .js-city-list{
+    padding-top:10px;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper .ys-ul-title{
+    padding-top:10px;
+}
+.ys-dropdown-project-select .ys-search-list-wrapper .ys-ul-title>span{
+    display: block;
+
+    margin-left:-20px;
+    margin-right:-20px;
+    padding-left:20px;
+    height:30px;
+    line-height: 30px;
+
+    background-color:#f8faf9;
+    color:#8b97a7;
+}
+
+
+/*ys-dropdown-search-select*/
+
+.ys-dropdown-search-select{}
+.ys-dropdown-search-select .dropdown-menu{
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+.ys-dropdown-search-select .ys-search-wrapper .ys-search{
+    width:100%;
+    float:inherit;
+}
+
+.ys-dropdown-search-select .ys-search-wrapper .ys-search>input{
+    border: solid 1px #32aaff;
+    -webkit-box-shadow: 0 5px 15px rgba(50,170,255,.5);
+    box-shadow: 0 5px 15px rgba(50,170,255,.5);
+}
+
+.ys-dropdown-search-select .dropdown-menu .ys-search-wrapper{
+    padding:0;
+
+}
+
+.ys-dropdown-search-select .ys-search-wrapper .js-loading{display:none;padding:10px;padding-top:15px;border:solid 1px #d8e0e7;
+    color:#8592a2;
+}
+.ys-dropdown-search-select .ys-search-wrapper .js-loading>.fa-spin{margin-right:10px;}
+.ys-dropdown-search-select .ys-search-wrapper .js-no-result{display:none;padding:10px;padding-top:15px;border:solid 1px #d8e0e7;
+    color:#8592a2;
+}
+
+
+.ui-widget.ui-widget-content{
+    border:solid 1px #d8e0e7;
+    margin-top:-6px;
+    max-height:220px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index:1060;
+}
+
+/*update swiper*/
+.swiper-scrollbar-drag{
+    cursor:move;
+}
+.swiper-container-horizontal>.swiper-scrollbar{
+    height:6px;
+}
+
+.ys-table td label{
+    margin-bottom:0;
+}
+
+.datetimepicker.dropdown-menu{
+    padding:4px;
+}
+
+/*ys-list-tree-table*/
+.ys-list-tree-table{
+
+}
+
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item{
+    color:#333;
+}
+
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item .ys-tree-table-row{
+    height:32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item .ys-tree-table-row:hover{
+    background-color:#f5f5f5;
+}
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item .ys-tree-table-row>span{display: none;}
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item .ys-tree-table-row ul.ys-table-row>.ys-table-cell:nth-child(1){
+    width:auto;
+}
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item .ys-tree-table-row ul.ys-table-row>.ys-table-cell{width:160px;}
+
+
+.ys-list-tree-table .ys-list-tree>li.ys-tree-item.parent:before{
+    top:9px;
+}
+
+.ui-menu .ui-menu-item .ui-menu-item-wrapper {
+    max-width:300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+/*panel-hover*/
+
+/*todo:update later*/
+
+/*
+.ys-panel-group-table{}
+
+.ys-panel-group-table .panel{
+
+}
+.ys-panel-group-table .panel:nth-of-type(odd) .panel-heading{
+    background-color:#f9f9f9;
+}
+*/
+
+
+/*====================update ys-adv-search-inline====================*/
+.ys-adv-search-inline{
+    position:absolute;
+    margin:0;
+    padding:15px 20px;
+    top:52px;
+    left:0;
+    background-color:rgba(255,255,255,.88);
+    display: none;
+}
+
+.ys-adv-search-inline>div{}
+.ys-adv-search-inline>div+div{margin-left:10px;}
+
+
+/*====================ys-input-wrapper====================*/
+.ys-input-wrapper{
+    position:relative;
+}
+
+.ys-input-wrapper.required{
+
+}
+.ys-input-wrapper.required:after{
+    display:block;
+    position:absolute;
+    border-top:solid 6px red;
+    border-left:solid 6px transparent;
+    content:" ";
+    top:0;
+    right:0;
+}
+
+.ys-input-wrapper.error{
+
+}
+
+.ys-input-wrapper input.form-control{
+    padding-right:30px;
+}
+
+.ys-input-wrapper.error input.form-control{
+    border:solid 1px red;
+}
+
+.ys-input-wrapper em.error-msg{
+    display: none;
+    position:absolute;
+    color: red;
+    right: 10px;
+    top: 8px;
+}
+
+.ys-input-wrapper.error em.error-msg{
+    display: block;
+}
+
+.ys-input-wrapper .tooltip{
+    min-width:120px;
+}
+
+.ys-input-wrapper .tooltip-inner{
+    display: inline-block;
+}
+
+
+/*====================ys-info-list====================*/
+.ys-info-list{
+
+}
+
+.ys-info-list .ys-info-item{
+    float:left;
+    padding-left:8px;
+    padding-right:25px;
+
+    min-width:60px;
+    text-align: left;
+    color:#8a97a8;
+
+}
+.ys-info-list .ys-info-item:hover{
+
+}
+.ys-info-list .ys-info-item span{
+    font-size:12.8px;
+}
+.ys-info-list .ys-info-item:hover span{color:#333;}
+.ys-info-list .ys-info-item:hover h3{color: #333;}
+
+.ys-info-list .ys-info-item+.ys-info-item{
+    min-width:88px;
+    padding-left:25px;
+    border-left:solid 1px #dce0e3;
+}
+
+.ys-info-list .ys-info-item h3{color:#333;margin-top:6px;font-size:22px;}
+.ys-info-list .ys-info-item h3>.em-unit{
+    font-size: 12px;
+    color: #757575;
+    margin-left: 5px;
+}
+
+/*.error-tip*/
+.error-tip {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+
+

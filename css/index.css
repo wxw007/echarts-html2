@@ -1,0 +1,335 @@
+body {
+    height: 100vh;
+    color: #fff;
+    background-color: #061734;
+    /* 浏览器不支持时显示 */
+    /* background-image: linear-gradient(#413875, #9198e5); */
+}
+
+.datetimepicker {
+    color: #333;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: .43rem .64rem;
+}
+
+/* 通用样式 start */
+
+.common-box {
+    background: rgba(19, 41, 78, 0.32);
+    border: 1px solid rgba(37, 64, 109, 1);
+    box-sizing: border-box;
+    padding: .1rem;
+    color: #fff;
+}
+.area-title{
+    font-size: .28rem;
+    margin-bottom: .1rem;
+}
+.color-green {
+    color: #1ABC58 !important;
+}
+
+.color-red {
+    color: #FE4744 !important;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+.font-1{
+    font-size: .22rem;
+}
+.font-2{
+    font-size: .15rem;
+    opacity: .7;
+}
+/* 图例圆环通用样式 */
+.ring{
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    width: .12rem;
+    height: .12rem;
+    vertical-align: middle;
+    margin-top: -.04rem;
+    margin-right: .03rem;
+}
+.ring::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    content: '';
+    width: .08rem;
+    height: .08rem;
+    border-radius: 50%;
+    background: #061734;
+    margin-top: -.04rem;
+    margin-left: -.04rem;
+}
+
+.bg-color-1{
+    background-image: linear-gradient(#FAD961, #F76B1C);
+}
+.bg-color-2{
+    background-image: linear-gradient(#00FFC7, #4930EF);
+}
+.bg-color-3{
+    background-image: linear-gradient(#7BD43C, #D2FE2E);
+}
+
+/* 每个区域的头部栏 */
+
+.title-tab {
+    font-size: .14rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.title-tab-line {
+    font-size: .14rem;
+    color: #ccc;
+}
+
+.title-tab.active {
+    color: #49E3C2;
+    cursor: default;
+}
+
+.box-title-right {
+    float: right;
+    color: #ccc;
+    margin-top: .01rem;
+}
+
+.title-num {
+    font-size: .18rem;
+    color: #FE4744;
+}
+
+.title-info {
+    font-size: .12rem;
+    text-align: right;
+    margin-bottom: .1rem;
+}
+
+.title-info>span {
+    margin-left: .15rem;
+}
+
+.info-num.span {
+    margin-left: .15rem;
+}
+
+/* 内容区的tab */
+
+.data-tab {
+    margin-top: .1rem;
+}
+
+.data-tab .title-tab {
+    font-size: .18rem;
+}
+
+/* 列表 */
+
+.list {
+    line-height: .25rem;
+}
+
+.list-item {
+    display: -webkit-box;
+    display: flex;
+    height: .2rem;
+    line-height: .2rem;
+    margin: .06rem 0;
+}
+
+.list-header {
+    background: #23447C;
+    opacity: .7;
+    height: .32rem;
+    line-height: .32rem;
+}
+
+.list-item-td {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: right;
+    padding: 1px .05rem 0 .05rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+}
+
+.list-item-td:first-child {
+    text-align: left;
+}
+
+/* 滚动条样式 */
+
+::-webkit-scrollbar {
+    width: 4px;
+    /*height: 4px;*/
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 通用样式 end */
+
+/* 头部 start */
+
+.page-title {
+    overflow: hidden;
+    padding-top: 1px;
+    margin-bottom: .1rem;
+}
+
+.project-name {
+    font-size: .4rem;
+    display: inline-block;
+    margin-right: .4rem;
+    float: left;
+}
+
+.page-title .date-picker {
+    width: 2rem;
+    display: inline-block;
+    float: left;
+    margin-top: .2rem;
+}
+
+.date-picker {
+    float: right;
+    margin-top: .2rem;
+    height: .3rem;
+    width: 1.4rem;
+    color: #fff;
+}
+
+.date-picker.ys-datepicker>input {
+    color: #70FFF9;
+    /* border: 1px solid #70FFF9 !important; */
+    border: none !important;
+    outline: none !important;
+    padding-left: .1rem;
+    font-size: .18rem;
+    width: 1.5rem;
+    margin-left: .15rem;
+}
+
+.date-picker>input:focus {
+    box-shadow: none;
+}
+
+.ys-datetimepicker:after {
+    border: none;
+    left: 0;
+    width: .16rem;
+    display: inline-block;
+    background-size: .16rem .14rem;
+}
+
+/* 头部 end */
+
+/* 左边模块 start */
+
+.left-box {
+    width: 8.74rem;
+    float: left;
+    
+}
+.left-box-1{
+    width: 8.72rem;
+    height: 2.27rem;
+}
+.left-box-1 .font-1{
+    margin-right: .32rem;
+}
+.box-top{
+    overflow: hidden;
+}
+.box-title{
+    float: left; 
+}
+.legend{
+    float: right;
+    margin-top: .06rem;
+}
+.legend > span{
+    margin-left: .1rem;
+}
+.chart-1{
+    margin-top: .08rem;
+    border: 1px solid #f00;
+    height: 1.6rem;
+}
+.left-box-2{
+    width: 5.4rem;
+    height: 6.52rem;
+    float: left;
+    margin-top: .1rem;
+}
+.left-box-2>div{
+    height: 2.1rem;
+    margin-top: .1rem;
+}
+.left-box-2>div:first-child{
+    margin: 0;
+}
+.left-box-3{
+    width: 3.22rem;
+    height: 6.52rem;
+    float: left;
+    margin-left: .1rem;
+    margin-top: .1rem;
+}
+
+/* 左边模块 end */
+
+/* 右边模块 start */
+.right-box{
+    width: 8.72rem;
+    float: right;
+}
+.right-box-1{
+        width: 8.72rem;
+        height: 2.92rem;
+}
+.right-box-2{
+    float: left;
+    margin-top: .1rem;
+    width: 5.46rem;
+    height: 5.85rem;
+}
+.right-box-2-1{
+    height: 2.88rem;
+}
+.right-box-2-2{
+    height: 2.88rem;
+    margin-top: .1rem;
+}
+.right-box-3{
+    float: left;
+    width: 3.14rem;
+    margin-left: .1rem;
+    margin-top: .1rem;
+    height: 5.85rem;
+}
+
+/* 右边模块 end */
