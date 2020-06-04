@@ -100,12 +100,11 @@ function makeChart1() {
             },
 
             type: 'value',
-            // data: [20, '40', '60', '80', '100']
         }],
         series: [{
                 symbol: "none",
                 type: 'line',
-                data: [0.5, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.1, 0.2, 0.3, 0.4],
+                data: [50,30,60,66,90,50,77,50,40,55,33,22],
                 lineStyle: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -120,7 +119,7 @@ function makeChart1() {
             {
                 symbol: "none",
                 type: 'line',
-                data: [0.9, 0.3, 0.5, 0.6, 0.6, 0.7, 0.4, 0.3, 0.6, 0.8, 0.7, 0.2, 0.2, 0.1],
+                data: [88,33,55,41,66,55,44,99,88,78,66,88],
                 lineStyle: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -135,7 +134,7 @@ function makeChart1() {
             {
                 symbol: "none",
                 type: 'line',
-                data: [0.5, 0.3, 0.2, 0.4, 0.5, 0.3, 0.7, 0.6, 0.9, 0.6, 0.5, 0.4],
+                data: [99,88,55,77,33,55,44,33,77,66,99,11],
                 lineStyle: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -353,10 +352,9 @@ function makeChart3() {
             },
 
             type: 'value',
-            data: ['20%', '40%', '60%', '80%', '100%'],
         }],
         series: [{
-                data: [0.6, 0.2, 0.5, 0.1, 0.44, 0.8, 0.5, 0.3, 0.7, 0.8, 0.3],
+                data: [55,77,33,77,99,88,33,22,55,77,44,88],
                 type: 'bar',
                 stack: '柱状图',
                 itemStyle: {
@@ -472,10 +470,9 @@ function makeChart4() {
             },
 
             type: 'value',
-            data: ['20%', '40%', '60%', '80%', '100%'],
         }],
         series: [{
-                data: [0.6, 0.2, 0.5, 0.1, 0.44, 0.8, 0.5, 0.3, 0.7, 0.8, 0.3],
+                data: [66,55,88,33,44,88,99,44,77,22,88,55],
                 type: 'bar',
                 itemStyle: {
                     normal: {
